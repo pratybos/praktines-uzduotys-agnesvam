@@ -32,7 +32,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="functions.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="registruotiZaidejai.txt" />
+		<Unit filename="taisykles.txt" />
+		<Unit filename="zaidimas.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
