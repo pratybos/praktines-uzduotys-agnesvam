@@ -35,6 +35,8 @@
 		<Unit filename="functions.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="registruotiZaidejai.txt" />
+		<Unit filename="reitingasNugaleti.txt" />
+		<Unit filename="reitingasTaskai.txt" />
 		<Unit filename="taisykles.txt" />
 		<Unit filename="zaidimas.h" />
 		<Extensions>

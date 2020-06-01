@@ -1,15 +1,16 @@
 # depslib dependency file v1.0
-1590574105 source:c:\users\abc\documents\github\praktines-uzduotys-agnesvam\zaidimas\main.cpp
+1591016379 source:c:\users\abc\documents\github\praktines-uzduotys-agnesvam\zaidimas\main.cpp
 	<iostream>
 	<fstream>
 	<string>
+	<time.h>
+	<bits/stdc++.h>
+	<algorithm>
+	<istream>
 	<stdlib.h>
 	<conio.h>
 	<windows.h>
-	"functions.h"
 	"zaidimas.h"
 
-1590576222 c:\users\abc\documents\github\praktines-uzduotys-agnesvam\zaidimas\functions.h
-
-1590576222 c:\users\abc\documents\github\praktines-uzduotys-agnesvam\zaidimas\zaidimas.h
+1591025020 c:\users\abc\documents\github\praktines-uzduotys-agnesvam\zaidimas\zaidimas.h
 

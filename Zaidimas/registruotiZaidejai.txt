@@ -1,1 +1,7 @@
-
+Antanas 2 60 7
+Tomas 5 100 6
+Gedas 1 0 32
+Jonas 3 450 1
+Birute 2 100 2
+Petras 4 600 9
+Inga 8 70 3
