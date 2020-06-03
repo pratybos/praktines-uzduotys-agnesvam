@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1591016379 source:c:\users\abc\documents\github\praktines-uzduotys-agnesvam\zaidimas\main.cpp
+1591168252 source:c:\users\abc\documents\github\praktines-uzduotys-agnesvam\zaidimas\main.cpp
 	<iostream>
 	<fstream>
 	<string>
@@ -12,5 +12,5 @@
 	<windows.h>
 	"zaidimas.h"
 
-1591025020 c:\users\abc\documents\github\praktines-uzduotys-agnesvam\zaidimas\zaidimas.h
+1591171298 c:\users\abc\documents\github\praktines-uzduotys-agnesvam\zaidimas\zaidimas.h
 

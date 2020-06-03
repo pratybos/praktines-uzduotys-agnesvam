@@ -1,4 +1,11 @@
-1.Tavo kambaryje yra sudetos bombos, turi jaas rasti
-2.sunkus-15 bombu; lengvas=10 bombu
-3.kytijjm
-4.kuyfjuyku
+Zaidimas yra zaidiamas su kompiuteriu.
+Zaidejui ir kompiuteriui yra sukuriami kambariai.
+Kambariuose yra sudetos bombos.
+Kiekvienas is zaideju speja kur yra bomba irasant stulpelio ir eilutes koordinates.
+Zaidimo tikslas- rasti savo kambaryje padetas bombas.
+Laimi tas zaidejas ,kuris pirmas randa visas bombas savo kambaryje.
+Lengvame lygyje kambaryje yra sudeta 10 bombu, o sunkiame- 15 bombu.
+Jeigu zaidejas nusprendzia nutraukti zaidima jo nepabaigus -jis netenka tasku( lengvame lygyje-50 ,sunkiame- 100) ir vienos gyvybes.
+Jeigu zaidejas pralaimi zaidima pries kompiuteri-jis netenka tasku( lengvame lygyje- 50,sunkiame- 100) ir vienos gyvybes.
+Jeigu zaidejas laimi zaidima- jis gauna tasku ( lengvame lygyje- 100,sunkiame- 200 ).
+Zaidejas gali uz taskus nusipirkti gyvybes

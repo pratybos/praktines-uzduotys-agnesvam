@@ -5,7 +5,6 @@
 #include <bits/stdc++.h>
 #include<algorithm>
 #include<istream>
-//#include <graphics.h>
 #include <stdlib.h>
 #include <conio.h>
 #include <windows.h>

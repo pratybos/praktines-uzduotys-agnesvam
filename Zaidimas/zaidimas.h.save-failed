@@ -31,25 +31,24 @@ void gotoxy(int x, int y)
 
 void rodytiTaisykles(){
 string name;
+int g=3;
 system("cls");
 system("color b5");
-
 ifstream dataFile("taisykles.txt");
-    while ( !dataFile.eof() )
+    while (!dataFile.fail() && !dataFile.eof() )
     {
-
-dataFile>>name;
-          cout << name<<" ";}
-
-cout<<endl;
+          dataFile >> name ;
+           gotoxy(3,g);
+          cout << name << endl;
+          g++;
+    }
 cout<<endl;
 int atgal;
 cout<< "< Atgal (enter)";
 atgal=getch();
             if(atgal){
             showMenu();}
-                    }
-
+        }
 
 void naujasZaidejas(){
  system("cls");
@@ -69,13 +68,13 @@ naujas->nugaletiSk=0;
 
 
 //irasome i registruotu zaideju sarasa
-ofstream d;
+ifstream d;
 d.open("registruotiZaidejai.txt", ios::app);
-d<<naujas->vardas<<" ";
-d<<naujas->gyvybiuSk<<" ";
-d<<naujas->taskusSk<<" ";
+d<<naujas->vardas<<", ";
+d<<naujas->gyvybiuSk<<", ";
+d<<naujas->taskusSk<<", ";
 d<<naujas->nugaletiSk<<endl;
-d.close();
+//d.close();
 
 system("cls");
  system("color b5");
@@ -835,7 +834,7 @@ gotoxy(3,5);
 cout<<"Uz taskus galite nusipirkti gyvybes"<<endl;
 cout<<"Siuo metu turite ["<<zaidejai[zaidejoNR-1].gyvybiuSk<<"] gyvybes ir ["<<zaidejai[zaidejoNR-1].taskusSk<<"] taskus"<<endl;
 
-
+int p;
 gotoxy(3,8);
 cout <<"(1) PIRKTI 1 GYVYBE [UZ 50 TASKU]";
 gotoxy(3,9);
@@ -845,82 +844,8 @@ cout <<"(3) PIRKTI 5 GYVYBES [UZ 200 TASKU]";
 gotoxy(3,11);
 cout <<"(4) ISEITI IS PARDUOTUVES"<<endl;
 
-char key = ' ';
-	bool running = true;
-
-	do
-	{
-		if( getKeyPressed( key ) )
-		{
-			switch( key )
-			{
-case '1':{
-    if(zaidejai[zaidejoNR-1].taskusSk>=50){
-      zaidejai[zaidejoNR-1].gyvybiuSk+=1;
-       zaidejai[zaidejoNR-1].taskusSk-=50;
-      atnaujinimas(zaidejoNR);
-      system("cls");
-      cout<<"NUSIPIRKOTE!";
-      Sleep(1500);
-      pagrindinis(zaidejoNR);
-      }
-
-      else{ system("cls");
-      cout<<"NETURITE UZTEKTINAI TASKU!";
-      Sleep(1500);
-      parduotuve(zaidejoNR);}
-
-break;
-
-}
-
-case '2':{
-    if(zaidejai[zaidejoNR-1].taskusSk>=80){
-      zaidejai[zaidejoNR-1].gyvybiuSk+=2;
-       zaidejai[zaidejoNR-1].taskusSk-=80;
-      atnaujinimas(zaidejoNR);
-      system("cls");
-      cout<<"NUSIPIRKOTE!";
-      Sleep(1500);
-      pagrindinis(zaidejoNR);
-      }
-
-      else{ system("cls");
-      cout<<"NETURITE UZTEKTINAI TASKU!";
-      Sleep(1500);
-      parduotuve(zaidejoNR);}
-
-break;
-
-}
-
-case '3':{
-    if(zaidejai[zaidejoNR-1].taskusSk>=200){
-      zaidejai[zaidejoNR-1].gyvybiuSk+=5;
-       zaidejai[zaidejoNR-1].taskusSk-=200;
-      atnaujinimas(zaidejoNR);
-      system("cls");
-      cout<<"NUSIPIRKOTE!";
-      Sleep(1500);
-      pagrindinis(zaidejoNR);
-      }
-
-      else{ system("cls");
-      cout<<"NETURITE UZTEKTINAI TASKU!";
-      Sleep(1500);
-      parduotuve(zaidejoNR);}
-
-break;
-
-}
-
-
-case '4': pagrindinis(zaidejoNR);
-break;
-}
-		}
-	}while( running );
-
+cout<<"Irasykite pasirinkima: ";
+cin>>p;
 
 
 
@@ -943,19 +868,9 @@ cout<<"(4) ZAIDEJU REITINGAS";
 gotoxy(3,8);
 cout<<"(5) ISEITI";
 cout<<endl;
-
-
-
-char key = ' ';
-	bool running = true;
-
-	do
-	{
-		if( getKeyPressed( key ) )
-		{
-			switch( key )
-			{
-case '1':{ //////info apie zaideja//////
+cin>>p;
+switch(p){
+case 1:{ //////info apie zaideja//////
     //zaidejoNR-=1;
     system("cls");
 cout<<"jusu vardas:"<<zaidejai[zaidejoNR-1].vardas<<endl;
@@ -965,30 +880,26 @@ cout<<"jusu nugaletu zaidimu skaicius: "<<zaidejai[zaidejoNR-1].nugaletiSk<<endl
 int atgal;
 cout<< "< Atgal (enter)";
 atgal=getch();
-            if(atgal)
+            if(atgal){
             pagrindinis(zaidejoNR);}
     break;
-
+}
 /////////////////////////////
-case '2': lygioPas(zaidejoNR);
+case 2:{ lygioPas(zaidejoNR);
     //game(zaidejoNR);
-    break;
-
-case '3': parduotuve(zaidejoNR);
-    break;
-case '4':{ reitingas(zaidejoNR);
     break;}
-case '5': showMenu();
-    break;
-			}
-		}
-	}while( running );
 
+case 3:{ parduotuve(zaidejoNR);
+    break;}
+case 4:{ reitingas(zaidejoNR);
+    break;}
+case 5:{ showMenu();
+    break;}
 
 
 
 }
-
+}
 
 
 void prisijungimas(){
@@ -1059,36 +970,24 @@ gotoxy(3,7);
 cout<<"(3) TAISYKLES"<<endl;
 gotoxy(3,8);
 cout<<"(4) ISEITI"<<endl;
+cin>>p;
 
-
-
-char key = ' ';
-	bool running = true;
-
-	do
-	{
-		if( getKeyPressed( key ) )
-		{
-			switch( key )
-			{
-case '1':
+switch(p){
+case 1:
     naujasZaidejas();
     break;
 
-case '2': prisijungimas();
+case 2: prisijungimas();
 break;
 
-case '3': rodytiTaisykles();
+case 3: rodytiTaisykles();
 break;
 
-case '4': break;
+case 4: break;
+
+
 
 }
-		}
-	}while( running );
-
-
-
 }
 
 
@@ -1176,7 +1075,7 @@ string head = "<!DOCTYPE html>\n<html>\n<head> <style> table, th, td { border: 1
     y<<"<h2> REITINGAS PAGAL TAŠKUS </H2>";
     y<<"<tr> <th bgcolor=C9C9F9>Nr.</th> <th bgcolor=C9C9F9>Taškai</th> <th bgcolor=C9C9F9>Vardas</th>  </tr>";
 
-    for(int i=0;i<size-1;i++){
+    for(int i=0;i<size-2;i++){
         y<<bodystart;
                 y<< i+1;
         y<< "</td>";
