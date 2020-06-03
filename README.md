@@ -1,21 +1,19 @@
-Pavyzdinis šablonas aprašant git repozitoriją. Visi studentai privalo aprašyti vadovaujantis žemiau pateiktu pavyzdžiu.<br/>
-**Marius Gžegoževkis, PI20A<br/>
-Nuotykių žaidimas "RELIKVIJŲ PAIEŠKA"<br/>**
+
+**Agnė Švambarytė, PI19C<br/>
+Žaidimas "BOMBOS"<br/>**
+
 Žaidimo taisyklės ir detalus aprašas:
-  - Žaidėjas žaidžia kaip kapitonas, kuriam reikia sugalvoti vardą.
-  - Žaidimo tikslas - surinkti 5 relikvijas, tada žaidimas bus laimėtas.
-  - Tam, kad surasti relikvijas, reikia keliauti po kitas planetas kosminiu laivu su įgula.
-  - Yra 10 gyvenamų planetų, kurias galima matyti žemėlapyje.
-  - Yra tokie resursai:
-    - maistas ir vanduo
-    - ginklai
-    - įgulos nariai
-    - auksas
-  - Įgula gali ieškoti aukso ir relikvijų, o visus kitus resursus reikia pirkti.
-  - Keliavimas reikalauja resursų maisto ir vandens, o ieškojimas maisto ir vandens, taip pat ginklų.
-  - Jei nėra pakankamai maisto keliavimas neįmanomas, bet ieškojimas aukso ir relikvijų galimas be maisto, tik tada miršta 1 įgulos narys.
-  - Ieškojimas reikalauja ginklų, jei ieškoma aukso, prarandamas 1 ginklas per vieną ieškojimą.
-  - Jei įgula neginkluota, tai prarandami žmonės, ieškant aukso miršta vienas neginkluotas įgulos narys per vieną ieškojimą.
-  - Jei ieškoma relikvijos, tai yra 3 praradimai per vieną ieškojimą, jei ginklų pakanka, tai prarandami 3 ginklai, o jei jų nėra, tai miršta tiek žmonių, kiek trūksta ginklų.
-  - Vienoje planetoje galima rasti tik vieną relikviją, norint ieškoti kitos relikvijos, reikia keliauti į kitą planetą.
-  - Jei visa įgula miršta, žaidimas bus pralaimėtas.
+- Susikurkite naują žaidėją. Užsiregistravus jums yra suteikiama 200 taškų ir 5 gyvybės.
+- Pasirinkite “žaisti” ir pasirinkite žaidimo lygį- lengvą arba sunkų. Lengvam žaidimo lygiui žaisti yra reikalingi 50 taškai, sunkiam-100. Taip pat, kad žaidėjas pradėtų žaidimą jis turi turėti bent vieną gyvybę.
+- Žaidimas yra žaidžiamas su kompiuteriu. 
+- Žaidėjui ir kompiuteriui yra sukuriami “kambariai”.
+- Kambariuose yra sudėtos bombos.
+- Kiekvienas iš žaidėjų spėja kur yra bomba įrašant stulpelio ir eilutės koordinates.
+- Žaidimo tikslas- rasti savo kambaryje padėtas bombas.
+- Laimi tas žaidėjas ,kuris pirmas randa visas bombas savo kambaryje. Lengvame lygyje kambaryje yra sudėta 10 bombų, o sunkiame- 15 bombų.
+- Jeigu žaidėjas nusprendžia nutraukti žaidimą jo nepabaigus -jis netenka taškų( lengvame lygyje-50 ,sunkiame- 100) ir vienos gyvybės.
+- Jeigu žaidėjas pralaimi žaidimą prieš kompiuterį-jis netenka taškų( lengvame lygyje- 50,sunkiame- 100) ir vienos gyvybės.
+- Jeigu žaidėjas laimi žaidimą- jis gauna taškų ( lengvame lygyje- 100,sunkiame- 200 ).
+- Žaidėjas gali pasižiūrėti kiek jam liko gyvybių, taškų ir kiek jis yra laimėjęs žaidimų pasirinkus pagrindiniame puslapyje “Informacija apie jūsų žaidėją”.
+- Žaidėjas gali už taškus nusipirkti gyvybes parduotuvėje.
+- Galima pažiūrėti reitingą visų registruotų žaidėjų (pagal taškų skaičių arba pagal nugalėtų žaidimų skaičių).
